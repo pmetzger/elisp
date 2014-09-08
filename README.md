@@ -6,8 +6,14 @@ actually copyright.
 
 The larger ones of my own are labeled with their license.
 
-timestamp.el: Trivial code for inserting a timestamp into the current buffer
+<dl>
 
-unbound.el: Slightly improved code for seeing what keys are not bound,
-so you can find bindings for your own code. I changed it to sort the
-output.
+<dt>timestamp.el:</dt>
+<dd>Trivial code for inserting a timestamp into the current buffer.<dd>
+
+<dt>unbound.el:</dt>
+<dd>Shows you what keys are not bound by emacs, so you can find
+free key combinations for bindings for your own code. I changed it to
+sort the output.</dd>
+
+</dl>
