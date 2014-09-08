@@ -137,7 +137,9 @@ Keys are sorted by their complexity; `key-complexity' determines it."
     (let ((keys (unbound-keys max)))
       (princ (format "%s unbound keys with complexity at most %s:\n"
                      (length keys) max))
-      (princ (mapconcat 'key-description keys "\n")))))
+      (princ (mapconcat (lambda (x) x)
+			(sort (mapcar 'key-description keys) 'string<)
+	                "\n")))))
 
 (provide 'unbound)
 
